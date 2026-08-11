@@ -1,0 +1,33 @@
+class Student14{
+	int rollNum, mark1,mark2,mark3,totalMarks;
+	String studName;
+	
+	
+	void setStudDetails(int rollNum,String studName,int mark1,int mark2,int mark3)
+	{
+		this.rollNum=rollNum;
+		this.studName=studName;
+		this.mark1=mark1;
+		this.mark2=mark2;
+		this.mark3=mark3;
+	}
+	void calculateTotal() {
+		totalMarks=mark1+mark2+mark3;
+		
+	}
+	void displayStudDetails() {
+		System.out.println("Roll No:" +rollNum+ " Name:" +studName+ " TotalMarks:" +totalMarks);
+	}
+}
+public class StudentDemo2 {
+
+	public static void main(String[] args) {
+		Student14 s1=new Student14();
+		s1.setStudDetails(123, "Alice", 31, 25, 27);
+		s1.calculateTotal();
+		s1.displayStudDetails();
+		// TODO Auto-generated method stub
+
+	}
+
+}
