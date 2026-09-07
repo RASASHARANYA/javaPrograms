@@ -1,7 +1,7 @@
 import java.util.Scanner;
-class  Rectangle{
+class  Rectangle1{
 	double length,breadth;
-	Rectangle(double length,double breadth){
+	Rectangle1(double length,double breadth){
 		this.length=length;
 		this.breadth=breadth;
 		
@@ -17,7 +17,7 @@ public class RetangleArea {
 		System.out.println("Enter length& breadth ");
 		double l=sc.nextDouble();
 		double b =sc.nextDouble();
-		Rectangle r=new Rectangle(l,b);
+		Rectangle1 r=new Rectangle1(l,b);
 		System.out.println("Area of Rectangle :"+r.area());
 		sc.close();
 		// TODO Auto-generated method stub
